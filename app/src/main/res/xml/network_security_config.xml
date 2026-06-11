@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--
+        Production: Enable certificate pinning once real SHA-256 pins are obtained
+        from the server certificate and stored in local.properties.
+        For now, allow all traffic to the API domain over HTTPS only.
+    -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">api.nexchat.app</domain>
+    </domain-config>
+</network-security-config>

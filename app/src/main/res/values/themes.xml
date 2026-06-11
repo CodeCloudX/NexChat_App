@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Base theme for NexChat. Uses a windowless/transparent theme because the
+        Compose UI handles all rendering via setContent{} in MainActivity.
+        Theme.NexChat.SplashScreen is applied via the SplashScreen compat API.
+    -->
+    <style name="Theme.NexChatApp" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+</resources>
